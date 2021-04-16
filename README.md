@@ -13,6 +13,8 @@ This design project is made by project group 16 for the Technical Computer Scien
 2. Run `npm install` in `/frontend/`
 3. Run `deploy.sh`
 
+You can find the compiled output in backend/target
+
 ## Credentials
 The right credentials should be inserted in the `/backend/src/main/resources/application.properties` file.
 
