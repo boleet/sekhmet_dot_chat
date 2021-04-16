@@ -1,0 +1,37 @@
+import * as webSocket from './webSocket.js';
+
+const name = Math.random().toString().substr(2,8);
+
+function send(message){
+    webSocket.sendToServer(message);
+}
+
+webSocket.startSocket(name); // open websocket and send initmessage to server
+webSocket.addReceiveSwitch(p2p.theP2pMessageSwitch) // add the p2p messages to the websocket's receive hook
+p2p.values.my_id = name;
+p2p.addChannel(0,"tcpTestReceiver")};
+
+function sendMessage(mindex){
+    var delay = 0;
+    for (kindex = 0; kindex < 100; kindex++){
+	setTimeout(
+	    () => {
+		send({
+		    mId:mindex,
+		    kId:kindex,
+		    timestamp: Date.now()
+		});
+	    }
+	    ,delay);
+	delay += 50 + (math.random * 100) // 50-150: average 10/second
+    }
+}
+var delay = 0;
+for(mindex = 0; mindex < 120; mindex++){
+    delay += 15000 + (math.random * 30000) // 15000 - 45000: average 2/minute
+    setTimeout(
+	() => if (myChannel != null) {
+	    sendMesage(mindex);
+	} 
+	,delay);
+}

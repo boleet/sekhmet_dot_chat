@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="module" src="/environment_BenchMarkTestReceiver.js"></script>
+	</head>
+	<body>
+	  <p id="results"></p>
+	</body>
+</html>

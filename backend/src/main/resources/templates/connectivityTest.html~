@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type= "text/javascript" src="p2p.js"></script>
+	<script type= "text/javascript" src="environment.js"></script>
+	</head>
+	<body>
+	<H1> Testtesttest</H1>
+	<H2>So ok, how the hell doesthis prototype work?</H2>
+	<p>
+	Easy. You open this page twice, and then you open the javascript console on both pages.
+	On one of the pages, you simulate someone attempting to open a connection, you do this by calling makeConnection(person,chat). this at some point will print a json object with messageType "offer". This is where you play server. You copy the object, you go to the other console and call "receiveServerHook(message)" on that object. this will print an answer, you go back to the first console, and do the some with the answer you did with the offer.
+	</p>
+	<p>
+	Now, we have reached the stage of Ice-communication. In this stage we cry. Both because the ice-timeout will already have expired on the sending browser, as well as copying an iceCandidate onto your clipboard simply not working.
+	</p>
+	<p>
+	That is why this prototype ends here.
+	</p>
+	</body>
+</html>
