@@ -3,6 +3,8 @@
 Sekhmet: secure chatting during digital examination.
 This design project is made by project group 16 for the Technical Computer Science bachelor at the University of Twente.
 
+This project has been made for educational purposes only, and should not be used.
+
 ## Installation
 
 1. Install
